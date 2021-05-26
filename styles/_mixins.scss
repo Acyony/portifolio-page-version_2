@@ -1,0 +1,21 @@
+@mixin list-style {
+  list-style: none;
+}
+
+@mixin centered-flex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@mixin grid-template {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@mixin font-awesome {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+   font-size: 3rem;
+
+}

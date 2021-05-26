@@ -1,0 +1,198 @@
+/* **********************Media Queries **********/
+
+@media (min-width: 0) and (max-width: 350px) {
+  .contact-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  body {
+    margin: 0 1rem;
+  }
+  header {
+    height: 16vh;
+  }
+
+  main {
+    .about-me-wrap {
+      height: 75vh;
+    margin-top: 12rem;
+
+    }
+
+    .about-me-image {
+      margin-bottom: 2rem;
+    }
+
+    .about-me-image p {
+      margin-bottom: 4rem;
+    }
+
+    .comments {
+      margin-bottom: 4rem;
+    }
+
+    .contact-wrap {
+      display: flex;
+      flex-direction: column;
+      //   height: 95vh;
+    }
+
+    .contact-column-right {
+      width: 70%;
+      margin-top: 4rem;
+    }
+
+    .contact-column-right img {
+      width: 40%;
+    }
+
+    .hobby--1,
+    .hobby--2,
+    .hobby--3 {
+      flex-direction: column;
+    }
+  }
+
+  .section-line-style {
+    margin: 4rem 0;
+  }
+
+  .footer-line-style:after {
+    margin-right: 50px;
+    left: 10px;
+  }
+}
+
+// Extra media queries between celphone and tablet
+
+@media (min-width: 481px) and (max-width: 990px) {
+  body {
+    padding: 4rem;
+  }
+
+  .contact-column-right {
+    width: 70%;
+    margin-top: 4rem;
+  }
+  .contact-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablet -481px - 768px*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 4rem;
+  }
+
+  main {
+
+    // margin-top: 8rem;
+
+    .submit {
+      margin-top: -3rem;
+    }
+
+    .hobby--1,
+    .hobby--2,
+    .hobby--3 {
+      flex-direction: column;
+    }
+  }
+
+  .section-line-style {
+    height: 25vh;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 684px) {
+  .about-me-wrap {
+    @include grid-template();
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    padding: 4rem;
+  }
+
+  .about-me-wrap {
+    margin-top: 9rem;
+  }
+
+  .section-line-style {
+    height: 35vh;
+    padding-top: 6rem;
+  }
+
+  .project--1:hover,
+  .project--2:hover,
+  .project--3:hover,
+  .project--4:hover,
+  .comments--1:hover,
+  .comments--2:hover,
+  .comments--3:hover,
+  .hobby--1:hover,
+  .hobby--2:hover,
+  .hobby--3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  .project--1,
+  .project--2,
+  .project--3,
+  .project--4,
+  .comments--1,
+  .comments--2,
+  .comments--3,
+  .hobby--1,
+  .hobby--2,
+  .hobby--3 {
+    transform: scale(1);
+    transition: 1s;
+  }
+}
+
+@media (min-width: 991px) {
+  .contact-wrap {
+    height: 75vh;
+    padding: 0 10rem;
+  }
+
+  .contact-column-right {
+    padding-left: 4rem;
+    width: 50%;
+  }
+
+  .contact-column-left {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1030px) {
+  .about-me-image {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1250px) {
+  .about-me {
+    padding: 4rem 20rem 2rem 0;
+  }
+}
+
+@media (min-width: 1490px) {
+  .hobby-wrap {
+    display: flex;
+    @include grid-template();
+    gap: 4rem;
+  }
+}
